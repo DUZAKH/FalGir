@@ -91,6 +91,7 @@ function draw() {
      displayMessage();
     // Checks if there is a selected message to display
     if (selectedMessage) {
+        //black
         fill(0);
         textSize(20);
         // Centers text horizontally and align it to the top vertically
@@ -121,6 +122,7 @@ function draw() {
         lines.push(currentLine); 
         // Starting position for the first line
         let yOffset = 30;
+        //same stuff from the site
         for (let line of lines) {
             text(line, width / 2, yOffset);
             //next line
@@ -129,7 +131,9 @@ function draw() {
     }
 
    // Draw and animate all items
+   //some of the issue in this code is here
     items.forEach((item) => {
+     //logic to identify the selected item
         if (selectedItem == null || item.name !== selectedItem.name) {
             // Animates unselected items
             animateItem(item);
@@ -137,6 +141,7 @@ function draw() {
             drawItem(item);
         } else {
             // Animates the selected item
+            // Does not work
             animateSelectedItem();
         }
     });
@@ -154,6 +159,7 @@ function animateItem(item) {
     const lowerBounce = 180; 
     const upperBounce = 220; 
     //if the direction is the starting one go up two
+    //the animation eases in
     if (item.direction === 1) {
         item.y += 2;
         //if it reaches the upper range it goes back down by one
