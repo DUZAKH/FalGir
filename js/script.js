@@ -1,11 +1,13 @@
 /**
  * FalGir
  * Kiana Rezaee
+ * Fal is a form of divination in Iran, Poetry plays a large part in this tradition. 
+ * In the most commonly practiced version: one must have a question they wish to find answers to and read a poem by Hafez. 
+ * This is traditionally done on Yalda (the longest night of the year/Winter Equinox). 
  * Instructions:
- * -Fal is a form of divination in Iran
- * -this is traditionally done on Yalda (the longest nighr of the year)
- * -make a question in your mind
- *-click an omen and recieve a reply!
+ *-There must be a question, wish, or worry in your mind
+ *-Think of it deeply
+ *-Click an omen and recieve a reply!
  +-https://www.iranicaonline.org/articles/divination
  *
  * Made with p5
