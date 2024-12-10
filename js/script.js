@@ -128,15 +128,15 @@ function draw() {
         }
     }
 
-    // Draw and animate all items
-    items.forEach(item => {
-        if (item !== selectedItem) {
+   // Draw and animate all items
+    items.forEach((item) => {
+        if (selectedItem == null || item.name !== selectedItem.name) {
             // Animates unselected items
-            animateItem(item); 
+            animateItem(item);
             // Draws unselected items
-            drawItem(item);    
+            drawItem(item);
         } else {
-            // Animates the selected item 
+            // Animates the selected item
             animateSelectedItem();
         }
     });
