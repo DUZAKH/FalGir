@@ -4,6 +4,7 @@
  * Fal is a form of divination in Iran, Poetry plays a large part in this tradition. 
  * In the most commonly practiced version: one must have a question they wish to find answers to and read a poem by Hafez. 
  * This is traditionally done on Yalda (the longest night of the year/Winter Equinox). 
+ * Fals are believed answer questions about the future, past, and present when interpreted correctly. 
  * Instructions:
  *-There must be a question, wish, or worry in your mind
  *-Think of it deeply
@@ -185,6 +186,7 @@ function drawItem(item) {
 
 //animates the selected item, not funcitoning 
 function animateSelectedItem() {
+    //this might have to do eiwth the else if and original animation as its hard to distinguish the selected item with the logic i coded
     // Animate selected item at the center, follows same logic as other items
     if (selectedItem.direction === 1) {
         selectedItem.y += 3;
