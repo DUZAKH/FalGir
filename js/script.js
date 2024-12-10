@@ -144,7 +144,7 @@ function draw() {
             drawItem(item);
         } else {
             // Animates the selected item
-            // Does not work
+            // Did not work,kind of does now!
             animateSelectedItem();
         }
     });
@@ -184,7 +184,7 @@ function drawItem(item) {
     image(itemImages[item.name], item.x, item.y, item.size, item.size);
 }
 
-//animates the selected item, not funcitoning 
+//animates the selected item, still has a small issue
 function animateSelectedItem() {
     //this might have to do eiwth the else if and original animation as its hard to distinguish the selected item with the logic i coded
     // Animate selected item at the center, follows same logic as other items
@@ -214,12 +214,12 @@ function mousePressed() {
             mouseX > item.x && mouseX < item.x + item.size &&
             mouseY > item.y && mouseY < item.y + item.size
         ) {
-            // Clones the item?
+            // Clones the item? not working
             selectedItem = { ...item }; 
             //start the selected item in the center
-            //selectedItem.y = height / 2; 
+            selectedItem.y = height / 2; 
             //selected item in the center
-            //selectedItem.direction = 1;
+            selectedItem.direction = 1;
             animateSelectedItem();
             selectedMessage = random(horoscopes);
         }
